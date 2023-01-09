@@ -1,0 +1,24 @@
+### 
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Xuxa"
+}
+
+###
+GET http://localhost:3000/users/1
+
+###
+PATCH http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+  "name": "Xuxa da Silva"
+}
+
+###
+DELETE http://localhost:3000/users/3
