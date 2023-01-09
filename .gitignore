@@ -43,3 +43,4 @@ db.sqlite
 **/*.sqlite
 
 db/migrations/**/*
+src/db/migrations/**/*.*

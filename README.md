@@ -25,7 +25,7 @@ export const dataSourceOptions: DataSourceOptions = {
   type: 'sqlite',
   database: 'db.sqlite',
   entities: ['dist/**/*.entity.js'],
-  migrations: ['dist/db/migrations/*.js'],
+  migrations: ['dist/**/migrations/*.js'],
 };
 
 const dataSource = new DataSource(dataSourceOptions);
@@ -54,7 +54,7 @@ export default dataSource;
 
 ### Executar comando de gerar migration
 
-> npm run migration:generate -- db/migrations/CreateUsers
+> npm run migration:generate -- src/db/migrations/CreateUsers
 
 ### Executar a migration
 
